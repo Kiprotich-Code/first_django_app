@@ -25,3 +25,12 @@ def home (request):
     print(request.META['HTTP_USER_AGENT'], '\n\n')
    
     return response
+
+
+def header(request):
+    message = '<h1>This is the films MAIN page.</h1>'
+    return HttpResponse(message)
+
+def user_info(request):
+    message = '<h1>This is the films USER_INFO page.</h1>'
+    return HttpResponse(message)
