@@ -7,7 +7,23 @@ def home (request):
 
 
 def header(request):
-    return render(request, 'main/header.html')
+    title = 'Main Page'
+
+    return render(request, 
+        'main/header.html',
+        {'title':title})
 
 def user_info(request):
-    return render(request, 'main/user_info.html')
+    userinfo = {
+        'username': 'Kiprotich',
+        'country': 'Kenya',
+    }
+
+    context = {
+        'userinfo': userinfo,
+        'title': 'User Info Page'
+    }
+
+    return render(request, 
+        'main/user_info.html',
+        context)

@@ -1,3 +1,7 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
 <h1>This is the home page</h1>
 <h3>Thanks for visiting us</h3>
 <p>MVT means:</p>
@@ -6,9 +10,11 @@
     <li>View</li>
     <li>Templates</li>
 </ul>
-<h3>Link to the website pages:</h3>
+<!-- <h3>Link to the website pages:</h3>
 <ul>
     <li><a href="{% url 'home' %}">Home Page</a></li>
     <li><a href="{% url 'main:header'%}">Films Main Page</a></li>
     <li><a href="{% url 'main:user_info' %}">User Info</a></li>
-</ul>
+</ul> -->
+
+{% endblock %}
